@@ -1,0 +1,129 @@
+<html>
+    <head>
+
+
+    </head>
+    <style>
+        *{margin: 0;padding: 0; box-sizing: border-box;}
+        body { background-color: #5F7C8A;}
+
+        form { 
+            background-color: white;
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        form h3{
+            text-align: center;
+            color: #5F7C8A;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        form input[type=text],
+        form input[type=password] {
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        form input[type=submit] {
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background-color: #5F7C8A;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+        }
+
+        form input[type=submit]:hover{
+            background-color: #4A5F6A ;
+            transition: 1s;
+        }
+
+        form input[type=text]:focus {
+            outline: 0;
+        }
+
+        form input[type=password]:focus {
+            outline: 0;
+        }
+
+        .campo {
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background-color: #5F7C8A;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -400%);
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom:0;
+            left:0;
+            text-align: center;
+            left: 44%;
+            background-color: rgb(111, 152, 179);
+            font-size: 1em;
+            font-family: sans-serif;
+        }
+
+    </style>
+    
+    <body>
+        <form>
+            <h3> Entrar em contato</h3>
+            <input  id="email" type="text" name = "email" placeholder= "Seu email..."/>
+            <input type="password" name ="senha" placeholder="Sua senha..."/>
+            <input type="submit" name="acao" value = "enviar"/>
+            <div class="form"> 
+                <label><strong>Como você chegou até aqui?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Facebook 
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Instagram
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Divulgações
+                    
+                </label>
+            </div>
+        </form>
+
+        <script>
+            var email = document.getElementById('email')
+            email.addEventListener('focus',()=>{
+                email.style.borderColor = "#4A5F6A";
+            }
+        </script>
+
+    </body>
+
+    <footer class="footer">
+        <h3> By: /DiogoLeonardoo 👩‍💻 </h3>
+        </footer>
+
+</html>
